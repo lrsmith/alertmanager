@@ -281,6 +281,7 @@ func NewMetrics(r prometheus.Registerer) *Metrics {
 		}, []string{"integration"}),
 	}
 	for _, integration := range []string{
+		"alertmanager",
 		"email",
 		"pagerduty",
 		"wechat",
@@ -622,6 +623,10 @@ func (n *DedupStage) Exec(ctx context.Context, _ log.Logger, alerts ...*types.Al
 	ctx = WithFiringAlerts(ctx, firing)
 	ctx = WithResolvedAlerts(ctx, resolved)
 
+	if n.recv.Integration == "alertmanager" {
+		gkey = "alertmanager"
+	}
+
 	entries, err := n.nflog.Query(nflog.QGroupKey(gkey), nflog.QReceiver(n.recv))
 	if err != nil && err != nflog.ErrNotFound {
 		return ctx, nil, err
@@ -770,6 +775,7 @@ func NewSetNotifiesStage(l NotificationLog, recv *nflogpb.Receiver) *SetNotifies
 
 // Exec implements the Stage interface.
 func (n SetNotifiesStage) Exec(ctx context.Context, l log.Logger, alerts ...*types.Alert) (context.Context, []*types.Alert, error) {
+
 	gkey, ok := GroupKey(ctx)
 	if !ok {
 		return ctx, nil, errors.New("group key missing")

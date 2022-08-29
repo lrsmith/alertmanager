@@ -319,7 +319,7 @@ func (d *Dispatcher) processAlert(alert *types.Alert, route *Route) {
 	ag, ok := routeGroups[fp]
 	if ok {
 		ag.insert(alert)
-		return
+		//	return
 	}
 
 	// If the group does not exist, create it. But check the limit first.
