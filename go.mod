@@ -7,7 +7,7 @@ require (
 	github.com/aws/aws-sdk-go v1.44.66
 	github.com/benbjohnson/clock v1.3.0
 	github.com/cenkalti/backoff/v4 v4.1.3
-	github.com/cespare/xxhash/v2 v2.1.2
+	github.com/cespare/xxhash/v2 v2.2.0
 	github.com/go-kit/log v0.2.1
 	github.com/go-openapi/errors v0.20.2
 	github.com/go-openapi/loads v0.21.1
@@ -23,12 +23,12 @@ require (
 	github.com/hashicorp/memberlist v0.3.2
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/kylelemons/godebug v1.1.0
-	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/matttproud/golang_protobuf_extensions v1.0.4
 	github.com/oklog/run v1.1.0
 	github.com/oklog/ulid v1.3.1
 	github.com/pkg/errors v0.9.1
-	github.com/prometheus/client_golang v1.12.2
-	github.com/prometheus/common v0.37.0
+	github.com/prometheus/client_golang v1.15.0
+	github.com/prometheus/common v0.42.0
 	github.com/prometheus/common/sigv4 v0.1.0
 	github.com/prometheus/exporter-toolkit v0.7.1
 	github.com/rs/cors v1.8.2
@@ -38,8 +38,8 @@ require (
 	github.com/xlab/treeprint v1.1.0
 	go.uber.org/atomic v1.9.0
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
-	golang.org/x/net v0.0.0-20220722155237-a158d28d115b
-	golang.org/x/text v0.3.7
+	golang.org/x/net v0.7.0
+	golang.org/x/text v0.7.0
 	golang.org/x/tools v0.1.12
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/telebot.v3 v3.0.0
@@ -47,6 +47,7 @@ require (
 )
 
 require (
+	github.com/alecthomas/kingpin/v2 v2.3.1 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
@@ -57,7 +58,7 @@ require (
 	github.com/go-openapi/analysis v0.21.2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.20.0 // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/btree v1.0.0 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-immutable-radix v1.0.0 // indirect
@@ -73,14 +74,16 @@ require (
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_model v0.2.0 // indirect
-	github.com/prometheus/procfs v0.7.3 // indirect
+	github.com/prometheus/client_model v0.3.0 // indirect
+	github.com/prometheus/procfs v0.9.0 // indirect
+	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
+	github.com/xhit/go-str2duration v1.2.0 // indirect
 	go.mongodb.org/mongo-driver v1.10.0 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
-	golang.org/x/oauth2 v0.0.0-20220223155221-ee480838109b // indirect
-	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
-	google.golang.org/appengine v1.6.6 // indirect
-	google.golang.org/protobuf v1.26.0 // indirect
+	golang.org/x/oauth2 v0.5.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	google.golang.org/appengine v1.6.7 // indirect
+	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
